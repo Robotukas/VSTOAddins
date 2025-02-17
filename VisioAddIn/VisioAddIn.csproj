@@ -182,9 +182,18 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="Presentation\Ribbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentation\Ribbon.Designer.cs">
+      <DependentUpon>Ribbon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="Presentation\Ribbon.resx">
+      <DependentUpon>Ribbon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -213,6 +222,16 @@
     </Compile>
     <AppDesigner Include="Properties\" />
     <None Include="VisioAddIn_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Icons\ExcelAddin.ico" />
+    <Content Include="Resources\Icons\VNCDeveloperMotivation.ico" />
+    <Content Include="Resources\Images\DebugWindow.gif" />
+    <Content Include="Resources\Images\WatchWindow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Resources\Xaml\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
