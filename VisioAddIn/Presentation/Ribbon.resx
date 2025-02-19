@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="grpDebugWindow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDebugWindow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhIAAgAIYAAPr6+gUFBczMzdTU1b29vSQkJOPj4/LIK/LSKlVWVNzc3PCTGiwsLKqrq1tbW8TE
         xDQ0NElJSaSlp21tbevr7AsLCz09PZSVlZugsfCvIs2IDo2QkIWFhbW1tX19fWVlZfTxXfLhLRsbG52d
@@ -138,7 +138,7 @@
         JE2gAw4nRIpDEVm4gJEADL31QZWJEkqBArRtQMIHDpTKVHcsXYqRUkoa91JAADs=
 </value>
   </data>
-  <data name="grpWatchWindow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnWatchWindow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhIAAfAIcAAP8A/wAAAACZAAQEBAgICBYWFiIiIjMzMzk5OYor4vD4//rr1wAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

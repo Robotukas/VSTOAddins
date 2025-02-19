@@ -40,21 +40,21 @@
             this.group1 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
-            this.grpDebug = this.Factory.CreateRibbonGroup();
+            this.rgDebug = this.Factory.CreateRibbonGroup();
             this.grpDebugWindow = this.Factory.CreateRibbonButton();
             this.grpWatchWindow = this.Factory.CreateRibbonButton();
             this.rcbLogToDebugWindow = this.Factory.CreateRibbonCheckBox();
             this.rcbEnableAppEvents = this.Factory.CreateRibbonCheckBox();
             this.rcnDisplayEvents = this.Factory.CreateRibbonCheckBox();
             this.rcbDisplayChattyEvents = this.Factory.CreateRibbonCheckBox();
-            this.grpHelp = this.Factory.CreateRibbonGroup();
+            this.rgHelp = this.Factory.CreateRibbonGroup();
             this.grpDisplayAddinInfo = this.Factory.CreateRibbonButton();
             this.btnToggleDeveloperMode = this.Factory.CreateRibbonButton();
             this.tabAddins.SuspendLayout();
             this.tabMyCoolStuff.SuspendLayout();
             this.group1.SuspendLayout();
-            this.grpDebug.SuspendLayout();
-            this.grpHelp.SuspendLayout();
+            this.rgDebug.SuspendLayout();
+            this.rgHelp.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabAddins
@@ -66,8 +66,8 @@
             // tabMyCoolStuff
             // 
             this.tabMyCoolStuff.Groups.Add(this.group1);
-            this.tabMyCoolStuff.Groups.Add(this.grpDebug);
-            this.tabMyCoolStuff.Groups.Add(this.grpHelp);
+            this.tabMyCoolStuff.Groups.Add(this.rgDebug);
+            this.tabMyCoolStuff.Groups.Add(this.rgHelp);
             this.tabMyCoolStuff.Label = "MyCoolStuff";
             this.tabMyCoolStuff.Name = "tabMyCoolStuff";
             // 
@@ -88,16 +88,16 @@
             this.button2.Label = "button2";
             this.button2.Name = "button2";
             // 
-            // grpDebug
+            // rgDebug
             // 
-            this.grpDebug.Items.Add(this.grpDebugWindow);
-            this.grpDebug.Items.Add(this.grpWatchWindow);
-            this.grpDebug.Items.Add(this.rcbLogToDebugWindow);
-            this.grpDebug.Items.Add(this.rcbEnableAppEvents);
-            this.grpDebug.Items.Add(this.rcnDisplayEvents);
-            this.grpDebug.Items.Add(this.rcbDisplayChattyEvents);
-            this.grpDebug.Label = "Debug";
-            this.grpDebug.Name = "grpDebug";
+            this.rgDebug.Items.Add(this.grpDebugWindow);
+            this.rgDebug.Items.Add(this.grpWatchWindow);
+            this.rgDebug.Items.Add(this.rcbLogToDebugWindow);
+            this.rgDebug.Items.Add(this.rcbEnableAppEvents);
+            this.rgDebug.Items.Add(this.rcnDisplayEvents);
+            this.rgDebug.Items.Add(this.rcbDisplayChattyEvents);
+            this.rgDebug.Label = "Debug";
+            this.rgDebug.Name = "rgDebug";
             // 
             // grpDebugWindow
             // 
@@ -133,12 +133,12 @@
             this.rcbDisplayChattyEvents.Label = "Display Chatty Events";
             this.rcbDisplayChattyEvents.Name = "rcbDisplayChattyEvents";
             // 
-            // grpHelp
+            // rgHelp
             // 
-            this.grpHelp.Items.Add(this.grpDisplayAddinInfo);
-            this.grpHelp.Items.Add(this.btnToggleDeveloperMode);
-            this.grpHelp.Label = "Help";
-            this.grpHelp.Name = "grpHelp";
+            this.rgHelp.Items.Add(this.grpDisplayAddinInfo);
+            this.rgHelp.Items.Add(this.btnToggleDeveloperMode);
+            this.rgHelp.Label = "Help";
+            this.rgHelp.Name = "rgHelp";
             // 
             // grpDisplayAddinInfo
             // 
@@ -163,10 +163,10 @@
             this.tabMyCoolStuff.PerformLayout();
             this.group1.ResumeLayout(false);
             this.group1.PerformLayout();
-            this.grpDebug.ResumeLayout(false);
-            this.grpDebug.PerformLayout();
-            this.grpHelp.ResumeLayout(false);
-            this.grpHelp.PerformLayout();
+            this.rgDebug.ResumeLayout(false);
+            this.rgDebug.PerformLayout();
+            this.rgHelp.ResumeLayout(false);
+            this.rgHelp.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -178,14 +178,14 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup grpDebug;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup rgDebug;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton grpDebugWindow;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton grpWatchWindow;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox rcbLogToDebugWindow;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox rcbEnableAppEvents;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox rcnDisplayEvents;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox rcbDisplayChattyEvents;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup grpHelp;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup rgHelp;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton grpDisplayAddinInfo;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnToggleDeveloperMode;
     }

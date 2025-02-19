@@ -14,53 +14,68 @@ namespace VisioAddIn
 
         }
 
-        private void button1_Click(object sender, RibbonControlEventArgs e)
+        private void button1_Click_1(object sender, RibbonControlEventArgs e)
         {
             MessageBox.Show("Button1_Click");
         }
 
-        private void button2_Click(object sender, RibbonControlEventArgs e)
+        private void button2_Click_1(object sender, RibbonControlEventArgs e)
         {
-
+            MessageBox.Show("Button2_Click");
         }
 
-        private void grpDisplayAddinInfo_Click(object sender, RibbonControlEventArgs e)
+        private void btnDebugWindow_Click(object sender, RibbonControlEventArgs e)
         {
-
+            //MessageBox.Show("btnDebugWindow_Click");
+            DisplayDebugWindow();
         }
 
-        private void btnToggleDeveloperMode_Click(object sender, RibbonControlEventArgs e)
+        private void DisplayDebugWindow()
         {
-
+            VNC.VSTOAddIn.Common.DebugWindow.Visible = !VNC.VSTOAddIn.Common.DebugWindow.Visible;
         }
 
-        private void grpDebugWindow_Click(object sender, RibbonControlEventArgs e)
+        private void btnWatchWindow_Click(object sender, RibbonControlEventArgs e)
         {
-
+            //MessageBox.Show("btnWatchWindow_Click");
+            DisplayWatchWindow();
         }
 
-        private void grpWatchWindow_Click(object sender, RibbonControlEventArgs e)
+        private void DisplayWatchWindow()
         {
-
+            VNC.VSTOAddIn.Common.WatchWindow.Visible = !VNC.VSTOAddIn.Common.WatchWindow.Visible;
         }
 
-        private void rcbLogToDebugWindow_Click(object sender, RibbonControlEventArgs e)
+        private void rcbEnableAppEvents_Click_1(object sender, RibbonControlEventArgs e)
         {
-
+            //MessageBox.Show("rcbEnableAppEvents_Click");
+            Common.EnableAppEvents = rcbEnableAppEvents.Checked;
         }
 
-        private void rcbEnableAppEvents_Click(object sender, RibbonControlEventArgs e)
+        private void rcbDisplayEvents_Click(object sender, RibbonControlEventArgs e)
         {
-
+            //MessageBox.Show("rcbDisplayEvents_Click");
+            Common.DisplayEvents = rcbDisplayEvents.Checked;
         }
 
-        private void rcnDisplayEvents_Click(object sender, RibbonControlEventArgs e)
+        private void rcbDisplayChattyEvents_Click_1(object sender, RibbonControlEventArgs e)
         {
-
+            MessageBox.Show("rcbDisplayChattyEvents_Click");
         }
 
-        private void rcbDisplayChattyEvents_Click(object sender, RibbonControlEventArgs e)
+        private void btnDisplayAddinInfo_Click(object sender, RibbonControlEventArgs e)
         {
+            DisplayAddinInfo();
+        }
+        private void DisplayAddinInfo()
+        {
+            VNC.VSTOAddIn.AddInInfo.DisplayInfo();
+        }
+
+        private void btnToggleDeveloperMode_Click_1(object sender, RibbonControlEventArgs e)
+        {
+            VNC.VSTOAddIn.Common.DeveloperMode = !VNC.VSTOAddIn.Common.DeveloperMode;
+            Globals.Ribbons.Ribbon.rgDebug.Visible = VNC.VSTOAddIn.Common.DeveloperMode;
 
         }
     }
