@@ -49,7 +49,7 @@ namespace VisioAddIn
         private void rcbEnableAppEvents_Click_1(object sender, RibbonControlEventArgs e)
         {
             //MessageBox.Show("rcbEnableAppEvents_Click");
-            Common.EnableAppEvents = rcbEnableAppEvents.Checked;
+            Common.HasAppEvents = rcbEnableAppEvents.Checked;
         }
 
         private void rcbDisplayEvents_Click(object sender, RibbonControlEventArgs e)
